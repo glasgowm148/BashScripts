@@ -31,7 +31,6 @@ file_check()
 			if [ -e "$var" ]
 			then 
 				echo "$var" is a file, attempting to decode...
-                continue
 			else
 				echo "$var" does not exist
                 exit 2

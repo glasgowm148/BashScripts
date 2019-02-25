@@ -8,7 +8,6 @@
 # c) Moves into the directory
 
 # Notes
-# Alternatively, an alias can be used. 
 # Better method : Alias?
 # Posix-compatible : define a shell procedure rather than a shell-invoked command script.
 
