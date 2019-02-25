@@ -19,6 +19,12 @@ if [ ! -d "data" ]
 	echo "Folder already exists"
 fi
 
+# You also should have tested if the processed directory
+# exists inside of data. It's possible that the data
+# directory was there, but the processed directory wasn't
+# inside. Similar comments about the exit codes. This task
+# included marks for good exit codes; you should have had
+# exit statement(s).
 
 
 # if docs doesn't exist
