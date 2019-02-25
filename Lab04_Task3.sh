@@ -7,15 +7,27 @@
 # b) Create it if it does not exist
 # c) Moves into the directory
 
-# Must be run with the dot command (.) as .sh only effects the subshell
+# Notes
 # Alternatively, an alias can be used. 
+# Better method : Alias?
+# Posix-compatible : define a shell procedure rather than a shell-invoked command script.
 
-if [ ! -d ${1} ]
-    then
-    mkdir -p ${1} && cd ${1};
-    else
-	echo "Folder already exists"
-fi
+make_folder()
+    {
+        if [ ! -d "${1}" ]
+        then
+        echo "Directories have been made";
+        mkdir -p "${1}" && cd "${1}" || exit;
+        exec bash # creates a child bash subshell 
+        else
+        echo "Folder already exists"
+        fi
+    }
+
+    make_folder "${1}"
+
+    exit
+
 
 
     

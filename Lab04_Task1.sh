@@ -13,4 +13,5 @@ for file in *
             fi
         fi
     done
+exit
        
